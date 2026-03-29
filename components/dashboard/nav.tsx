@@ -36,7 +36,7 @@ export default function DashboardNav({ landlordName }: { landlordName: string })
   return (
     <aside className="w-56 bg-white border-r border-gray-200 flex flex-col">
       <div className="px-5 py-5 border-b border-gray-200">
-        <span className="text-xl font-bold text-emerald-600">Flip</span>
+        <span className="text-xl font-bold text-emerald-600">LeasePilot</span>
       </div>
       <nav className="flex-1 px-3 py-4 space-y-1">
         {NAV_ITEMS.map(({ href, label, icon: Icon }) => {

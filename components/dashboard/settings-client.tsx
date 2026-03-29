@@ -75,7 +75,7 @@ export default function SettingsClient({ landlord }: { landlord: Landlord }) {
         <Card>
           <CardHeader>
             <CardTitle className="text-base">Escalation Notifications</CardTitle>
-            <p className="text-sm text-gray-500 mt-1">How Flip reaches you when a lead needs human attention.</p>
+            <p className="text-sm text-gray-500 mt-1">How LeasePilot reaches you when a lead needs human attention.</p>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-1.5">
@@ -112,7 +112,7 @@ export default function SettingsClient({ landlord }: { landlord: Landlord }) {
         <Card>
           <CardHeader>
             <CardTitle className="text-base">Webhook Setup</CardTitle>
-            <p className="text-sm text-gray-500 mt-1">Use this endpoint with Zapier or Make to send Zillow leads into Flip.</p>
+            <p className="text-sm text-gray-500 mt-1">Use this endpoint with Zapier or Make to send Zillow leads into LeasePilot.</p>
           </CardHeader>
           <CardContent className="space-y-3">
             <div className="space-y-1.5">

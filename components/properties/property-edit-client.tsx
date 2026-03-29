@@ -198,7 +198,7 @@ export default function PropertyEditClient({
               <div className="space-y-1.5">
                 <Label>Application URL</Label>
                 <Input value={applicationUrl} onChange={(e) => setApplicationUrl(e.target.value)} placeholder="https://apply.doorloop.com/..." />
-                <p className="text-xs text-gray-400">The link Flip sends when a prospect is ready to apply.</p>
+                <p className="text-xs text-gray-400">The link LeasePilot sends when a prospect is ready to apply.</p>
               </div>
               <div className="flex items-center gap-2">
                 <input
@@ -208,7 +208,7 @@ export default function PropertyEditClient({
                   onChange={(e) => setIsActive(e.target.checked)}
                   className="h-4 w-4 rounded border-gray-300 text-emerald-600"
                 />
-                <Label htmlFor="is_active">Property is active (Flip will respond to leads)</Label>
+                <Label htmlFor="is_active">Property is active (LeasePilot will respond to leads)</Label>
               </div>
             </CardContent>
           </Card>
@@ -216,7 +216,7 @@ export default function PropertyEditClient({
 
         {/* ── Ideal Tenant ── */}
         <TabsContent value="criteria" className="space-y-5">
-          <p className="text-sm text-gray-500">These settings shape how Flip qualifies applicants and what the AI prioritizes in conversations.</p>
+          <p className="text-sm text-gray-500">These settings shape how LeasePilot qualifies applicants and what the AI prioritizes in conversations.</p>
 
           <Card>
             <CardHeader><CardTitle className="text-base">Hard Requirements</CardTitle></CardHeader>

@@ -36,7 +36,7 @@ export function buildLandlordEscalationSMS(
   dashboardUrl: string
 ): string {
   const name = leadName ?? 'a prospect'
-  return `Flip alert: ${name} at ${propertyAddress} needs your attention. ${reason}. Log in: ${dashboardUrl}`
+  return `LeasePilot: ${name} at ${propertyAddress} needs your attention. ${reason}. Log in: ${dashboardUrl}`
 }
 
 export function buildStuckLeadEscalationMessage(
@@ -46,5 +46,5 @@ export function buildStuckLeadEscalationMessage(
   dashboardUrl: string
 ): string {
   const name = leadName ?? 'A prospect'
-  return `Flip: ${name} at ${propertyAddress} has been stuck for ${stuckFor} without a reply. Check in: ${dashboardUrl}`
+  return `LeasePilot: ${name} at ${propertyAddress} has been stuck for ${stuckFor} without a reply. Check in: ${dashboardUrl}`
 }

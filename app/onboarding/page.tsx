@@ -50,7 +50,7 @@ export default function OnboardingPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <span className="text-3xl font-bold text-emerald-600">Flip</span>
+          <span className="text-3xl font-bold text-emerald-600">LeasePilot</span>
           <p className="text-gray-500 mt-2">Let's set up your account — takes 2 minutes.</p>
         </div>
 
