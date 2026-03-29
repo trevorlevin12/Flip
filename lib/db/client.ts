@@ -1,6 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
 import { createServerClient } from '@supabase/ssr'
-import { cookies } from 'next/headers'
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
@@ -19,7 +18,9 @@ export function getBrowserClient() {
 }
 
 // Server client for Server Components and Route Handlers (respects RLS)
+// cookies() is imported dynamically to avoid pulling next/headers into client bundles
 export async function getServerClient() {
+  const { cookies } = await import('next/headers')
   const cookieStore = await cookies()
   return createServerClient(supabaseUrl, supabaseAnonKey, {
     cookies: {
